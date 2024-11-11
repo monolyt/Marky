@@ -4,8 +4,6 @@
     "description": "Your private Bookmark Hub",
     "start_url": "/Marky",
     "display": "standalone",
-    "background_color": "#e9e9e7",
-    "theme_color": "#191919",
     "icons": [
         {
             "src": "/assets/android-chrome-192x192.png",
