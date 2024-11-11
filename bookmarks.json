@@ -1,0 +1,178 @@
+[
+  {
+    "title": "Neurodiversity Design",
+    "url": "https://neurodiversity.design/",
+    "description": "Combines neurodiversity and user experience design",
+    "tags": [
+      "Design",
+      "Accessibility"
+    ]
+  },
+  {
+    "title": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/",
+    "description": "Online magazine for web designers and developers ",
+    "tags": [
+      "Design",
+      "WebDev"
+    ]
+  },
+  {
+    "title": "Uncut WTF",
+    "url": "https://uncut.wtf/",
+    "description": "Collection of free, independent, community typefaces.",
+    "tags": [
+      "Typography",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Mastodon",
+    "url": "https://mastodon.de/explore",
+    "description": "Private and decentralized social network.",
+    "tags": [
+      "Social"
+    ]
+  },
+  {
+    "title": "Lucide Icons",
+    "url": "https://lucide.dev/",
+    "description": "Community-built open-source icon library.",
+    "tags": [
+      "Icons",
+      "Design",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Open Foundry",
+    "url": "https://open-foundry.com/",
+    "description": "Library of open-source typefaces and fonts for free use.",
+    "tags": [
+      "Typography",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Yr.no",
+    "url": "https://yr.no/en",
+    "description": "Accurate weather forecasting application with global data.",
+    "tags": [
+      "Weather"
+    ]
+  },
+  {
+    "title": "GitHub",
+    "url": "https://github.com/",
+    "description": "Platform for code hosting, version control, and collaboration.",
+    "tags": [
+      "WebDev",
+      "Collaboration"
+    ]
+  },
+  {
+    "title": "Monolyt",
+    "url": "https://monolyt.co/",
+    "description": "A media designer and visual artist.",
+    "tags": [
+      "Resources",
+      "Portfolio"
+    ]
+  },
+  {
+    "title": "Mockups Design",
+    "url": "https://mockups-design.com/",
+    "description": "Free, high-quality mockup resources for design presentations.",
+    "tags": [
+      "Design",
+      "Mockups",
+      "Resources"
+    ]
+  },
+  {
+    "title": "unDraw",
+    "url": "https://undraw.co/",
+    "description": "Open-source illustrations for any project.",
+    "tags": [
+      "Design",
+      "Illustrations",
+      "open-Source"
+    ]
+  },
+  {
+    "title": "Open Peeps",
+    "url": "https://www.openpeeps.com/",
+    "description": "Free, hand-drawn illustration library for character design.",
+    "tags": [
+      "Design",
+      "Illustrations",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "description": "Open-source whiteboard tool and graphs.",
+    "tags": [
+      "Collaboration",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Freesound",
+    "url": "https://freesound.org/",
+    "description": "Community-based sound-sharing site with free audio samples.",
+    "tags": [
+      "Audio",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Undesign",
+    "url": "https://undesign.learn.uno/",
+    "description": "Curated list of design and development resources.",
+    "tags": [
+      "Design",
+      "WebDev",
+      "Resources",
+      "Open-Source"
+    ]
+  },
+  {
+    "title": "Netlify",
+    "url": "https://www.netlify.com/",
+    "description": "Build, deploy, and host static websites.",
+    "tags": [
+      "WebDev"
+    ]
+  },
+  {
+    "title": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/",
+    "description": "Documentation for web including HTML, CSS, and JavaScript.",
+    "tags": [
+      "Documentation",
+      "WebDev"
+    ]
+  },
+  {
+    "title": "HTML Standard",
+    "url": "https://html.spec.whatwg.org/",
+    "description": "Official HTML specification maintained by WHATWG.",
+    "tags": [
+      "HTML",
+      "Documentation",
+      "WebDev"
+    ]
+  },
+  {
+    "title": "CSS Specifications",
+    "url": "https://www.w3.org/TR/CSS",
+    "description": "Official CSS specifications by W3C.",
+    "tags": [
+      "CSS",
+      "Documentation",
+      "WebDev"
+    ]
+  }
+]

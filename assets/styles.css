@@ -1,0 +1,252 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #37352f;
+    --inverse-text-color: #fff;
+    --border-color: #e9e9e7;
+    --icon-color: #a5a4a1;
+    --link-color: #0a85d1;
+    --border-radius: 8px;
+    --font-size: 16px;
+}
+
+/* Dark mode colors */
+:root[dark] {
+    --bg-color: #191919;
+    --text-color: #d3d3d3;
+    --inverse-text-color: ;
+    --border-color: #2f2f2f;
+    --icon-color: #7e7e7e;
+    --link-color: #32abf5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    letter-spacing: -0.01rem;
+    max-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 4rem;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    background-color: var(--bg-color);
+}
+
+#searchInput:focus {
+    border-color: var(--border-color);
+    outline: 0;
+    box-shadow: 0 0 3px var(--link-color);
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--icon-color);
+    transition: color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    color: var(--link-color);
+}
+
+
+/* Responsive Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table a {
+    color: var(--link-color);
+}
+
+th,
+td {
+    padding: 6px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1rem;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+}
+
+th.sortable {
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+}
+
+th.sortable .sort-indicator {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.8em;
+    color: var(--icon-color);
+}
+
+/* Updated Filter Icon Styling */
+.filter-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    vertical-align: middle;
+    color: var(--icon-color);
+    transition: color 0.3s ease;
+}
+
+.filter-icon:hover {
+    color: var(--highlight-color);
+}
+
+/* Tag Filter Dropdown */
+.tag-filter-dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    max-height: 40vh;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 100%;
+}
+
+.tag-filter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.tag-filter-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Unified Tag Styling */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--inverse-text-color);
+    margin: 2.5px 4px 2.5px 0;
+    cursor: pointer;
+}
+
+/* Adjust for table tags to add margin between tags in a row */
+td .tag {
+    margin-right: 5px;
+}
+
+.sort-indicator svg,
+.filter-icon svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    /* Ensure no extra spacing */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #searchInput {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    /* Hide less important columns on mobile if needed */
+    td:nth-child(2),
+    th:nth-child(2) {
+        display: none;
+        /* Hide Description column on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    #searchInput {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        font-size: 0.8em;
+    }
+
+    /* Mobile adjustments for tag elements */
+    .tag {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+
+    /* Ensure the filter dropdown adapts to mobile screens */
+    .tag-filter-dropdown {
+        width: auto;
+        max-height: 50vh;
+        /* font-size: 0.8rem; */
+    }
+}

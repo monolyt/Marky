@@ -1,0 +1,21 @@
+{
+    "name": "Marky",
+    "short_name": "Marky",
+    "description": "Your private Bookmark Hub",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#e9e9e7",
+    "theme_color": "#191919",
+    "icons": [
+        {
+            "src": "/assets/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

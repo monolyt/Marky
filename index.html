@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marky</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!--Import Typefaces-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Marky - Your Bookmarks</h1>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-eclipse">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a7 7 0 1 0 10 10" />
+            </svg>
+        </button>
+
+        <!-- Search Input -->
+        <input type="text" id="searchInput" placeholder="Search...">
+
+        <!-- Bookmark Table -->
+        <table id="bookmarkTable">
+            <thead>
+                <tr>
+                    <th data-column="title" class="sortable">Title <span class="sort-indicator"></span></th>
+                    <th data-column="description" class="sortable">Description <span class="sort-indicator"></span></th>
+                    <th data-column="tags" class="sortable">
+                        Tags <span class="sort-indicator"></span>
+                        <!-- SVG filter icon with independent click handling -->
+                        <span class="filter-icon" id="tagFilterIcon" onclick="toggleTagFilterDropdown(event)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-list-filter">
+                                <path d="M3 6h18" />
+                                <path d="M7 12h10" />
+                                <path d="M10 18h4" />
+                            </svg>
+                        </span>
+                        <div id="tagFilterDropdown" class="tag-filter-dropdown"></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Content will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
